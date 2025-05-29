@@ -1,0 +1,316 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d; /* Dark background similar to Figma */
+    color: #e0e0e0; /* Light gray text */
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333;
+    color: #00ff00; /* Green color for logo/title */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Main Content Area */
+main {
+    padding: 20px;
+    max-width: 1200px; /* Limit content width */
+    margin: 0 auto; /* Center content */
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below image */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Category Sections (Gaming, Graphics Cards, Networking) */
+.category-section {
+    margin-bottom: 50px;
+}
+
+.category-section h3 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff; /* White color for headings */
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 25px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #2a2a2a; /* Darker card background */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #00ff00; /* Green color for card titles */
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #b0b0b0;
+}
+
+/* NVIDIA Deep Learning Section */
+.nvidia-deep-learning {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 40px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nvidia-deep-learning .content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center;
+}
+
+.nvidia-deep-learning img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.nvidia-deep-learning .text-content {
+    flex: 1; /* Allows text to take remaining space */
+    min-width: 300px; /* Minimum width for text before wrapping */
+}
+
+.nvidia-deep-learning h4 {
+    font-size: 1.8em;
+    color: #00ff00;
+    margin-bottom: 15px;
+}
+
+.nvidia-deep-learning p {
+    font-size: 1.1em;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.learn-more-link {
+    color: #00ff00;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1em;
+    transition: color 0.2s ease-in-out;
+}
+
+.learn-more-link:hover {
+    color: #00cc00;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #1a1a1a;
+    border-top: 1px solid #333;
+    color: #b0b0b0;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.footer-logo img {
+    height: 30px; /* Adjust height as needed */
+}
+
+.footer-links a {
+    color: #b0b0b0;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9em;
+}
+
+.footer-links a:hover {
+    color: #e0e0e0;
+}
+
+/* Bottom Floating Bar */
+.bottom-floating-bar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(42, 42, 42, 0.9); /* Semi-transparent dark background */
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: flex;
+    gap: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+.bottom-floating-bar .icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-floating-bar .icon-button img {
+    filter: invert(1); /* Makes placeholder icons white */
+}
+
+.bottom-floating-bar .ask-to-edit-button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.bottom-floating-bar .ask-to-edit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 2em;
+    }
+
+    .category-section h3 {
+        font-size: 1.8em;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .nvidia-deep-learning .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-top: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-links a {
+        margin: 0 10px;
+    }
+
+    .bottom-floating-bar {
+        padding: 8px 15px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        padding: 10px 15px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5em;
+    }
+
+    .category-section h3 {
+        font-size: 1.5em;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h4 {
+        font-size: 1.1em;
+    }
+
+    .card p {
+        font-size: 0.8em;
+    }
+
+    .nvidia-deep-learning {
+        padding: 20px;
+    }
+
+    .nvidia-deep-learning h4 {
+        font-size: 1.4em;
+    }
+
+    .nvidia-deep-learning p {
+        font-size: 0.9em;
+    }
+
+    .bottom-floating-bar {
+        bottom: 10px;
+        padding: 5px 10px;
+        gap: 8px;
+    }
+
+    .ask-to-edit-button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
